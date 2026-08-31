@@ -110,17 +110,5 @@ else:
                 st.subheader(f"Answer using {selected_model}")
                 st.write_stream(stream)
 
-        if st.button("Compare all 4 models"):
-            st.subheader("Model comparison")
-            for model_name in MODEL_OPTIONS:
-                with st.spinner(f"Running {model_name}..."):
-                    response = run_model(client, model_name, messages)
-
-                if response is None:
-                    continue
-
-                answer = response.choices[0].message.content
-                st.markdown(f"### {model_name}")
-                st.write(answer)
-                st.caption("---")
+     
          
