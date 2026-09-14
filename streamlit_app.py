@@ -4,6 +4,7 @@ st.set_page_config(page_title="HW Manager")
 
 hw1_page = st.Page("HW1.py", title="HW 1", icon="📝")
 hw2_page = st.Page("HW2.py", title="HW 2", icon="📝", default=True)
+hw3_page = st.Page("HW3.py", title="HW3", icon="📝")
 
-pg = st.navigation([hw1_page, hw2_page])
+pg = st.navigation([hw1_page, hw2_page, hw3_page])
 pg.run()
