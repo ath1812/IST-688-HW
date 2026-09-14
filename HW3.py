@@ -44,7 +44,7 @@ url_2 = st.sidebar.text_input("URL 2 (optional)")
 
 llm_choice = st.sidebar.selectbox(
     "Choose an LLM",
-    ("OpenAI - GPT-5.6 Sol", "Google - Gemini 3.1 Pro"),
+    ("OpenAI - GPT-5.6 Sol", "Google - Gemini 3.1 Pro Preview"),
 )
 
 url_context = ""
@@ -114,9 +114,9 @@ if user_input:
                 )
                 response = st.write_stream(stream)
 
-            if llm_choice == "Google - Gemini 3.1 Pro":
+            if llm_choice == "Google - Gemini 3.1 Pro Preview":
                 gemini_model = genai.GenerativeModel(
-                    "gemini-3.1-pro",
+                    "gemini-3.1-pro-preview",
                     system_instruction=system_prompt_text,
                 )
                 gemini_history = []

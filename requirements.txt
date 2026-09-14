@@ -1,6 +1,6 @@
 streamlit
+requests
+beautifulsoup4
 openai
-PyMuPDF
-requests 
-beautifulsoup4 
-google-generativeai
+google-generativeai==0.8.3
+tiktoken==0.8.0
