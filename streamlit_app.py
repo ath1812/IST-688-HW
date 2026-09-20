@@ -2,10 +2,10 @@ import streamlit as st
 
 st.set_page_config(page_title="HW Manager")
 
-hw1_page = st.Page("HW1.py", title="HW 1", icon="📝")
-hw2_page = st.Page("HW2.py", title="HW 2", icon="📝", default=True)
-hw3_page = st.Page("HW3.py", title="HW 3", icon="📝")
-hw4_page = st.Page("HW4.py", title="HW 4", icon="📝")
+hw1_page = st.Page("HW1.py", title="HW 1",)
+hw2_page = st.Page("HW2.py", title="HW 2", default=True)
+hw3_page = st.Page("HW3.py", title="HW 3",)
+hw4_page = st.Page("HW4.py", title="HW 4",)
 
 pg = st.navigation([hw1_page, hw2_page, hw3_page, hw4_page])
 pg.run()
