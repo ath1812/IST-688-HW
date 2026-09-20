@@ -4,3 +4,6 @@ beautifulsoup4
 openai
 google-generativeai==0.8.3
 tiktoken==0.14.0
+pysqlite3-binary
+ chromadb
+ PyPDF2
