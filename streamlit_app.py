@@ -7,6 +7,7 @@ hw2_page = st.Page("HW2.py", title="HW 2", default=True)
 hw3_page = st.Page("HW3.py", title="HW 3",)
 hw4_page = st.Page("HW4.py", title="HW 4",)
 hw5_page = st.Page("HW5.py", title="HW 5")
+hw7_page = st.Page("HW7.py", title="HW 7")
 
 pg = st.navigation([hw1_page, hw2_page, hw3_page, hw4_page, hw5_page])
 pg.run()
